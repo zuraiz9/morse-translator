@@ -34,6 +34,12 @@
 // input.innerHTML = "hello";
 // console.log(input);
 
+const input = document.querySelector(".input")
+const output = document.querySelector(".output")
+const translateBtn = document.querySelector(".btn")
+
+
+
 const morseCode = {
   a: ".-",
   b: "-...",
@@ -83,5 +89,13 @@ const convertToMorse = (string) => {
     })
     .join(" ");
 };
-console.log(convertToMorse("hello zuraiz"));
-console.log(convertToMorse("test 1"));
+// console.log(convertToMorse("hello zuraiz"));
+// console.log(convertToMorse("test 1"));
+
+
+translateBtn.addEventListener("click", () => {
+  console.log(input.value);
+  const morse = convertToMorse(input.value);
+  output.innerHTML = morse;
+  console.log(morse);
+})
