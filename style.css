@@ -3,3 +3,69 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  text-align: center;
+  background-color: #f6f6f2;
+}
+
+.heading {
+  padding-top: 5vh;
+  color: #388087;
+  font-family: "Azeret Mono", monospace;
+}
+
+.input {
+  height: 30vh;
+  width: 70vw;
+  margin-top: 5vh;
+  text-align: center;
+  background-color: #badfe7;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  font-size: 2em;
+  font-family: "Azeret Mono", monospace;
+}
+
+.output {
+  height: 30vh;
+  width: 70vw;
+  margin-top: 5vh;
+  background-color: #6fb3b8;
+  color: white;
+  border-radius: 20px;
+  font-size: 2em;
+  font-family: "Azeret Mono", monospace;
+  padding-top: 30px;
+}
+
+.outputContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  margin-top: 5vh;
+  width: 15vw;
+  min-width: 140px;
+  height: 8vh;
+  border-radius: 20px;
+  background-color: #c2edce;
+  font-size: 18px;
+  color: #388087;
+  border: 0;
+  cursor: pointer;
+  font-family: "Azeret Mono", monospace;
+}
+
+button:hover {
+  transform: scale(0.94);
+}
+
+p {
+  margin-top: 5vh;
+  font-family: "Azeret Mono", monospace;
+  color: #388087;
+}

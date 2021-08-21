@@ -1,11 +1,9 @@
+"use strict";
 
-const input = document.querySelector(".input")
-const output = document.querySelector(".output")
-const translateBtn = document.querySelector(".btn")
-
-
-
-const morseCode = {
+var input = document.querySelector(".input");
+var output = document.querySelector(".output");
+var translateBtn = document.querySelector(".btn");
+var morseCode = {
   a: ".-",
   b: "-...",
   c: "-.-.",
@@ -42,25 +40,20 @@ const morseCode = {
   6: "-....",
   7: "--...",
   8: "---..",
-  9: "----.",
+  9: "----."
 };
 
-const convertToMorse = (string) => {
-  return string
-    .toLowerCase()
-    .split("")
-    .map((char) => {
-      return morseCode[char] ? morseCode[char] : char;
-    })
-    .join(" ");
-};
-// console.log(convertToMorse("hello zuraiz"));
+var convertToMorse = function convertToMorse(string) {
+  return string.toLowerCase().split("").map(function (_char) {
+    return morseCode[_char] ? morseCode[_char] : _char;
+  }).join(" ");
+}; // console.log(convertToMorse("hello zuraiz"));
 // console.log(convertToMorse("test 1"));
 
 
-translateBtn.addEventListener("click", () => {
+translateBtn.addEventListener("click", function () {
   console.log(input.value);
-  const morse = convertToMorse(input.value);
+  var morse = convertToMorse(input.value);
   output.innerHTML = morse;
   console.log(morse);
-})
+});
