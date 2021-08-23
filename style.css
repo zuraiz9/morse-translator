@@ -10,7 +10,7 @@ body {
 }
 
 .heading {
-  padding-top: 5vh;
+  padding-top: 3vh;
   color: #388087;
   font-family: "Azeret Mono", monospace;
 }
@@ -58,6 +58,7 @@ body {
   border: 0;
   cursor: pointer;
   font-family: "Azeret Mono", monospace;
+  margin-bottom: 3vh;
 }
 
 button:hover {
